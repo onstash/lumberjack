@@ -6,7 +6,7 @@ This project is about creating a custom logger with a few arguments such as logg
 
 ## Why was this made?
 
-In the python projects I have worked with either at work or personal projects, I have always had to create a logging instance with a FileHandler, provide a logging format, provide logging file name (and create directories if need be), which is extremely frustrating, at the least. So I decided to encapsulate the pain points regarding the aforementioned.
+In the python projects I have worked with (work or personal projects), I have always had to create a logging instance with a FileHandler, provide a logging format, provide logging file name (and create directories if need be), which is extremely frustrating, at the least. So I decided to encapsulate the pain points regarding the aforementioned.
 
 ## How do I use this?
 

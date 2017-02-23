@@ -19,7 +19,7 @@ class Lumberjack():
         "%(levelname)s",
         "%(message)s"
     ])
-    default_file_name = "custom_logger.log"
+    default_file_name = "lumberjack.log"
     default_timestamp_format = "%Y%m%d-%H%M%S"
     valid_handlers = ("file", "console")
 

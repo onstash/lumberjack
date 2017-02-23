@@ -20,6 +20,9 @@ logger = Lumberjack(name="lumberjack")
 logger = Lumberjack(name="lumberjack", file_name="logs/lumberjack.log")
 
 logger.info('Live long and prosper, hoomans')
+
+# Log output
+2017-02-23 20:31:41,932 - lumberjack - INFO - Live long and prosper, hoomans!
 ```
 
 ## Can I contribute to this?

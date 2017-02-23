@@ -1,4 +1,4 @@
-# Lumberjack - Logging for Humans
+# Lumberjack - Python Logging for Humans™
 
 ## What is this?
 

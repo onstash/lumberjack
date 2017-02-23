@@ -6,7 +6,7 @@ This project is about creating a custom logger with a few arguments such as logg
 
 ## Why was this made?
 
-In the python projects I have worked with either at work or personal projects, I have always had to create a logging instance with a FileHandler, provide a logging format, provide logging file name (and create directories if need be), which is extremely frustrating, at the least. So I decided to encapsulate the pain points regarding the aforementioned.
+In the python projects I have worked with (work or personal projects), I have always had to create a logging instance with a FileHandler, provide a logging format, provide logging file name (and create directories if need be), which is extremely frustrating, at the least. So I decided to encapsulate the pain points regarding the aforementioned.
 
 ## How do I use this?
 
@@ -20,6 +20,9 @@ logger = Lumberjack(name="lumberjack")
 logger = Lumberjack(name="lumberjack", file_name="logs/lumberjack.log")
 
 logger.info('Live long and prosper, hoomans')
+
+# Log output
+2017-02-23 20:31:41,932 - lumberjack - INFO - Live long and prosper, hoomans!
 ```
 
 ## Can I contribute to this?

@@ -12,14 +12,14 @@ class Lumberjack():
     """Lumberjack - Logger class for humans"""
     default_level_number = 999
     default_level = logging.DEBUG
-    default_name = "CustomLogger"
+    default_name = "Lumberjack"
     default_format = " - ".join([
         "%(asctime)s",
         "%(name)s",
         "%(levelname)s",
         "%(message)s"
     ])
-    default_file_name = "custom_logger.log"
+    default_file_name = "lumberjack.log"
     default_timestamp_format = "%Y%m%d-%H%M%S"
     valid_handlers = ("file", "console")
 

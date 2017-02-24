@@ -10,41 +10,54 @@ In the python projects I have worked with (work or personal projects), I have al
 
 ## How do I use this?
 
-```
-from lumberjack import Lumberjack
+1. Package import
 
-# outputs logs in the console.
-logger = Lumberjack(name="lumberjack")
+    ```
+    from lumberjack import Lumberjack
 
-# outputs logs in the filename 'logs/lumberjack_<timestamp>.log'
-logger = Lumberjack(name="lumberjack", file_name="logs/lumberjack.log")
+    # outputs logs in the console.
+    logger = Lumberjack(name="lumberjack")
 
-logger.info('Live long and prosper, hoomans')
+    # outputs logs in the filename 'logs/lumberjack_<timestamp>.log'
+    logger = Lumberjack(name="lumberjack", file_name="logs/lumberjack.log")
+    ```
 
-# Log info output
-2017-02-23 20:31:41,932 - lumberjack - INFO - Live long and prosper, hoomans!
+2. Using `.info(...)`
 
-logger.debug('NOOOOOOOOOOOOOOOOO!')
+    ```
+    logger.info('Live long and prosper, hoomans')
 
-# Log debug output
-2017-02-24 04:08:11,265 - lumberjack - DEBUG - NOOOOOOOOOOOOOOOOO!
+    # Log info output
+    2017-02-23 20:31:41,932 - lumberjack - INFO - Live long and prosper, hoomans!
+    ```
 
-logger.log(50, 'This is DEFCON level 50')
+3. Using `.debug(...)`
 
-# Log output
-2017-02-24 04:33:22,869 - lumberjack - CRITICAL - This is DEFCON level 50
+    ```
+    logger.debug('NOOOOOOOOOOOOOOOOO!')
 
-logger.log(500, 'Deez notes were demonetized in India')
+    # Log debug output
+    2017-02-24 04:08:11,265 - lumberjack - DEBUG - NOOOOOOOOOOOOOOOOO!
+    ```
 
-# Log output
-2017-02-24 04:33:48,558 - lumberjack - Level 500 - Deez notes were demonetized in India
+4. Using `.log(...)`
 
-logger.log('This is DEFCON level 999?')
+    ```
+    logger.log(50, 'This is DEFCON level 50')
 
-# Log output
-2017-02-24 04:33:13,615 - lumberjack - Level 999 - This is DEFCON level 999?
-```
+    # Log output
+    2017-02-24 04:33:22,869 - lumberjack - CRITICAL - This is DEFCON level 50
 
+    logger.log(500, 'Deez notes were demonetized in India')
+
+    # Log output
+    2017-02-24 04:33:48,558 - lumberjack - Level 500 - Deez notes were demonetized in India
+
+    logger.log('This is DEFCON level 999?')
+
+    # Log output
+    2017-02-24 04:33:13,615 - lumberjack - Level 999 - This is DEFCON level 999?
+    ```
 
 ## Can I contribute to this?
 

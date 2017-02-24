@@ -114,8 +114,14 @@ class Lumberjack():
     def critical(self, *args, **kwargs):
         raise NotImplementedError()
 
-    def debug(self, *args, **kwargs):
-        raise NotImplementedError()
+    def debug(self, message):
+        """
+        Function to log debug messages.
+        :param message: Log debug message
+        :type  message: basestring
+        """
+        assert isinstance(message, basestring)
+        self.logger.debug(message)
 
     def error(self, *args, **kwargs):
         raise NotImplementedError()

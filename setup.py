@@ -8,13 +8,13 @@ def read(fname):
     return open(join(dirname(__file__), fname)).read()
 
 setup(name='pylumberjack',
-      version='0.0.1',
+      version='0.0.2',
       description='Python Logging for Humans',
       author='Santosh Venkatraman',
       url='https://github.com/thesantosh/lumberjack',
       author_email='santosh.venk@gmail.com',
       packages=['lumberjack'],
-      long_description=read('README'),
+      long_description=read('README.rst'),
       license="MIT",
       classifiers=[
         "Development Status :: 3 - Alpha",

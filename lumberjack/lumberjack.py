@@ -106,6 +106,7 @@ class Lumberjack():
         :param message: Log information message
         :type  message: basestring
         """
+        assert isinstance(message, basestring)
         self.logger.info(message)
 
     def log(self, message, level=default_level_number):

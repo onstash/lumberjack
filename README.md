@@ -28,6 +28,21 @@ logger.debug('NOOOOOOOOOOOOOOOOO!')
 
 # Log debug output
 2017-02-24 04:08:11,265 - lumberjack - DEBUG - NOOOOOOOOOOOOOOOOO!
+
+logger.log(50, 'This is DEFCON level 50')
+
+# Log output
+2017-02-24 04:33:22,869 - lumberjack - CRITICAL - This is DEFCON level 50
+
+logger.log(500, 'Deez notes were demonetized in India')
+
+# Log output
+2017-02-24 04:33:48,558 - lumberjack - Level 500 - Deez notes were demonetized in India
+
+logger.log('This is DEFCON level 999?')
+
+# Log output
+2017-02-24 04:33:13,615 - lumberjack - Level 999 - This is DEFCON level 999?
 ```
 
 

@@ -106,6 +106,7 @@ class Lumberjack():
         :param message: Log information message
         :type  message: basestring
         """
+        assert isinstance(message, basestring)
         self.logger.info(message)
 
     def log(self, message, level=default_level_number):
@@ -114,8 +115,14 @@ class Lumberjack():
     def critical(self, *args, **kwargs):
         raise NotImplementedError()
 
-    def debug(self, *args, **kwargs):
-        raise NotImplementedError()
+    def debug(self, message):
+        """
+        Function to log debug messages.
+        :param message: Log debug message
+        :type  message: basestring
+        """
+        assert isinstance(message, basestring)
+        self.logger.debug(message)
 
     def error(self, *args, **kwargs):
         raise NotImplementedError()

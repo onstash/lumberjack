@@ -14,7 +14,7 @@ setup(name='pylumberjack',
       url='https://github.com/thesantosh/lumberjack',
       author_email='santosh.venk@gmail.com',
       packages=['lumberjack'],
-      long_description=read('README'),
+      long_description=read('README.rst'),
       license="MIT",
       classifiers=[
         "Development Status :: 3 - Alpha",
